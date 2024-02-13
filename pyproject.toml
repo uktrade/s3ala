@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "s3ala"
+version = "0.0.0.dev0"
+authors = [
+  { name="Department for International Trade", email="sre@digital.trade.gov.uk" },
+]
+description = "A basic CLI-based aggregator to extract some very basic metrics from ALB logs stored in an S3 bucket"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+
+[project.urls]
+"Source" = "https://github.com/uktrade/s3ala"
+
+[tool.hatch.build]
+include = [
+  "s3ala.py"
+]
